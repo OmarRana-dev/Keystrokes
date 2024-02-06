@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="keyboard_.svg" type="image/x-icon">
     <title>KeyStrokes</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -13,9 +16,9 @@
         </div>
     </header>
     <div class="showbar">
-        <h1>JavaScript Key Code <span>34</span></h1>
+        <h1>JavaScript Key Code <span class="vl-keyCode">85</span></h1>
         <div class="top-key-shower">
-            <p>93</p>
+            <p class="vl-keyCode">85</p>
             <h3>Key Code Information</h3>
         </div>
     </div>
@@ -23,22 +26,25 @@
         <div class="grid-container">
             <div class="griditem">
                 <p class="box-header">event.key</p>
-                <p class="box-content"> p</p>
-                <p class="box-discp">The value of the key pressed. Accounts for modifiers keys that return CAPS and alternate chars.</p>
+                <p class="box-content" id="event-key">u</p>
+                <p class="box-discp">The value of the key pressed. Accounts for modifiers keys that return CAPS and
+                    alternate chars.</p>
             </div>
             <div class="griditem">
                 <p class="box-header">event.code</p>
-                <p class="box-content"> KeyU</p>
-                <p class="box-discp">The physical key on the keyboard. Doesn't care of you are holding a modifier like Shift.</p>
+                <p class="box-content" id="event-code">KeyU</p>
+                <p class="box-discp">The physical key on the keyboard. Doesn't care of you are holding a modifier like
+                    Shift.</p>
             </div>
             <div class="griditem">
                 <p class="box-header">event.which</p>
-                <p class="box-content"> 34</p>
-                <p class="box-discp">event.which and event.keyCode are deprecated in modern browers. Use .key or .code instead.</p>
+                <p class="box-content" id="event-which">85</p>
+                <p class="box-discp">event.which and event.keyCode are deprecated in modern browers. Use .key or .code
+                    instead.</p>
             </div>
             <div class="griditem">
-                <p class="box-header">event.Discription</p>
-                <p class="box-content">d</p>
+                <p class="box-header">event.location</p>
+                <p class="box-content" id="event-location">General key</p>
                 <p class="box-discp">This is the description we have created. Think it can be improved?</p>
             </div>
         </div>
@@ -53,4 +59,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
